@@ -8,9 +8,9 @@ do
         vim-cmd vmsvc/snapshot.create $i $(date "+%F")
         sleep 30s
         if [ $? -eq 0 ];then
-            echo "$(date "+%F %T") : $vname snapshot create success.." >> ./vmfs/volumes/datastore1/crontabs/log/schedule_snap.log
+            echo "$(date "+%F %T") : $vname snapshot create success.." >> ./vmfs/volumes/datastore11/crontabs/log/schedule_snap.log
         else
-            echo "$(date "+%F %T") : $vname snapshot create FAILED.." >> ./vmfs/volumes/datastore1/crontabs/log/schedule_snap.log
+            echo "$(date "+%F %T") : $vname snapshot create FAILED.." >> ./vmfs/volumes/datastore11/crontabs/log/schedule_snap.log
         fi
     fi
 done
